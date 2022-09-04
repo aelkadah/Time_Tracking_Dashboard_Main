@@ -32,7 +32,8 @@ body {
 }
 @media (max-width: 991px) {
   .container {
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 /* Small */
