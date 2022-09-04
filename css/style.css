@@ -1,6 +1,7 @@
 :root {
   --verydarkblue: hsl(226, 43%, 10%);
-  --darkblue: hsl(235, 46%, 20%);
+  --darkblue: hsl(235, 45%, 20%);
+  --desaturatedblue: hsl(235, 45%, 60%);
   --paleblue: hsl(236, 100%, 87%);
   --personUpper: hsl(246, 80%, 60%);
   --work: hsl(15, 100%, 70%);
@@ -168,11 +169,23 @@ body {
   padding: 10px 20px;
   border-radius: 15px 15px 0 0;
 }
+.box:hover .bottom {
+  background-color: var(--desaturatedblue);
+}
 .box .bottom .title-ellipsis {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.box .bottom .title-ellipsis .ellipsis {
+  cursor: pointer;
+}
+/* .box .bottom .title-ellipsis .ellipsis i {
+  color: var(--paleblue);
+} */
+.box .bottom .title-ellipsis .ellipsis:hover i {
+  opacity: 0.6;
 }
 .box .bottom .title-ellipsis h3 {
   font-weight: 400;
